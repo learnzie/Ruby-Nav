@@ -1,0 +1,15 @@
+.btn {
+  background: #4b0281;
+  border: 1px solid #4b0281;
+  color: #fff;
+}
+.btn-big {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+}
+.btn-small {
+  padding: 1.5rem 4.3rem;
+  margin-top: 4.1rem;
+}

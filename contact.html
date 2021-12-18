@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="./assets/style/contact.css" />
+    <link rel="stylesheet" href="./assets/style/button.css" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </head>
+  <body>
+    <!-- ----header starts----- -->
+    <section class="header">
+      <div class="header-container">
+        <nav>
+          <span
+            ><a href="index.html"><img src="./assets/img/logo.png" alt="" /></a
+          ></span>
+          <div class="nav-link" id="navLinks">
+            <span
+              class="iconify click"
+              data-icon="fa-solid:times"
+              onclick="hideMenu()"
+            ></span>
+            <ul>
+              <li>
+                <a href="privacy.html">What is Rubynav?</a>
+              </li>
+              <li>
+                <a href="terms.html">How It Works</a>
+              </li>
+              <li>
+                <a href="faqs.html">FAQ’s</a>
+              </li>
+              <li>
+                <a href="contact.html" class="active">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <span
+            class="iconify click"
+            data-icon="codicon:three-bars"
+            onclick="showMenu()"
+          ></span>
+        </nav>
+        <h1>Contact us</h1>
+        <div class="flex">
+          <div class="flex-col">
+            <h2>Call us</h2>
+            <p>+1-492-4918-395</p>
+            <p>+14-394-409-591</p>
+          </div>
+          <div class="flex-col">
+            <h2>Email us</h2>
+            <p>contact@rubynav.com</p>
+            <p>apply@rubynav.com</p>
+          </div>
+          <div class="flex-col">
+            <h2>Visit us</h2>
+            <p>19547 Rippling Brook Ln,</p>
+            <p>Tomball TX, 77375</p>
+          </div>
+        </div>
+        <div class="message-container">
+          <div>
+            <h2>or, Send us a message</h2>
+            <form action="">
+              <h3>Your name</h3>
+              <input type="text" placeholder="i.e James cameron" />
+              <h3>Email address</h3>
+              <input type="email" placeholder="i.e James@email.com" />
+              <h3>Subject</h3>
+              <input
+                type="text"
+                placeholder="i.e I want to about your service"
+              />
+              <h3>message</h3>
+              <textarea
+                name="text"
+                placeholder="write your message here"
+                id=""
+                cols="20"
+                rows="5"
+              ></textarea>
+              <button class="btn btn-big">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----Find every service you need-----  -->
+    <section class="find-every">
+      <div class="image30">
+        <img src="./assets/img/Oval2.png" style="width: 100%" alt="" />
+      </div>
+      <div class="find-every-contain">
+        <h1>Find every service you need</h1>
+      </div>
+      <div class="find-every-container">
+        <div class="find-every-container-col50">
+          <p>
+            Rubynav connects you to a community of freelancers who can deliver
+            almost anything!
+          </p>
+        </div>
+        <div class="center find-every-container-col40">
+          <div><img src="./assets/img/google.png" alt="" /></div>
+          <div><img src="./assets/img/appstore.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- -----Footer----- -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-col30">
+          <img src="./assets/img/logo-white.svg" alt="" />
+        </div>
+        <div class="footer-col70">
+          <div>
+            <p>Learn</p>
+            <ul>
+              <li>About Rubynav</li>
+              <li>How it works</li>
+              <li><a href="faqs.html">F.A.Q</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Terms</p>
+            <ul>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Links</p>
+            <ul>
+              <li>Become a Rubber</li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <p>© 2020 Rubynav, All Rights Reserved</p>
+        <div class="icon">
+          <span class="iconify" data-icon="logos:twitter"></span>
+          <span class="iconify" data-icon="ei:sc-facebook"></span>
+          <span class="iconify" data-icon="ant-design:google-outlined"></span>
+        </div>
+      </div>
+    </section>
+    <!-- ----Java script for toggle menu---- -->
+    <script src="./assets/js/nav.js"></script>
+  </body>
+</html>

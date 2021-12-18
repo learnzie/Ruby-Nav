@@ -1,0 +1,358 @@
+@font-face {
+  font-family: BrownBold;
+  src: url(./assets/font/BrownBold/BrownBold.ttf);
+}
+@font-face {
+  font-family: avenir;
+  src: url(../assets/font/avenir/Avenir-Roman.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  list-style: none;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #33a8ce;
+  border-radius: 5rem;
+}
+body {
+  font-family: avenir, sans-serif;
+  position: relative;
+}
+/* ----Header---- */
+
+.header {
+  background: #4b0281;
+  min-height: 30vh;
+  margin-bottom: 10rem;
+  color: #ffffff;
+}
+.header .header-container {
+  width: 85%;
+  margin: auto;
+}
+.header .header-container nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+nav img {
+  width: 12.4rem;
+  object-fit: contain;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-link ul li a {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.nav-link ul li a.active {
+  color: black;
+}
+.nav-link ul li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: #f33446;
+  display: block;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+nav .click {
+  display: none;
+}
+.header .header-container .navlinks a.active {
+  color: black;
+}
+.header .header-container .frequently {
+  width: 40%;
+}
+.header .header-container .frequently h1 {
+  margin-top: 9rem;
+  font-size: 4rem;
+}
+.header .header-container .frequently p {
+  font-size: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 6.2rem;
+}
+/* ----user---- */
+.users-container {
+  width: 80%;
+  margin: auto;
+}
+.users-container h1 {
+  font-size: 3.6rem;
+  color: #4b0281;
+  text-align: center;
+}
+.users-container .faq-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #f0f3f8;
+  border: 1px solid #f0f3f8;
+  border-radius: 0.7rem;
+  margin: 3rem 0;
+  padding: 0.5rem 8rem;
+  align-items: center;
+  cursor: pointer;
+}
+.users-container .faq-title .iconify {
+  font-size: 3.4rem;
+}
+.users-container .faq-body {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 3rem;
+  height: 0;
+}
+.users-container .faq-body.show {
+  height: auto;
+}
+.users-container .faq-body .flex-col {
+  width: 50%;
+}
+.users-container .faq-body .flex-col h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+.users-container .faq-body .flex-col p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+/* ------Find every service you need---- */
+.find-every {
+  background: #25043d;
+  color: #ffffff;
+  border-bottom: 1px solid #877697;
+}
+.find-every .image30 {
+  width: 30%;
+}
+.find-every .find-every-contain {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-top: 8rem;
+}
+.find-every .find-every-contain h1 {
+  font-size: 6rem;
+}
+.find-every .find-every-container {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+.find-every .find-every-container .find-every-container-col50 {
+  width: 45%;
+}
+.find-every .find-every-container .find-every-container-col50 p {
+  font-size: 1.8rem;
+  line-height: 1.9;
+  margin-top: 6.9rem;
+  color: #beb4c5;
+}
+.find-every .find-every-container .find-every-container-col40 {
+  width: 40%;
+  margin-left: auto;
+  margin-top: 5.2rem;
+}
+/* <!-- -----Footer----- --> */
+.footer {
+  background: #25043d;
+  color: #fff;
+}
+.footer .footer-container {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-top: 8.7rem;
+  border-bottom: 2px solid #2f2f31;
+  padding-bottom: 4rem;
+}
+.footer .footer-container .footer-col70 {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  gap: 9rem;
+  line-height: 2;
+}
+.footer .footer-container .footer-col70 p {
+  font-size: 1.6rem;
+}
+.footer .footer-container .footer-col70 ul li {
+  font-size: 1.3rem;
+  color: #beb4c5;
+}
+.footer .footer-container .footer-col70 ul li a {
+  font-size: 1.3rem;
+  color: #beb4c5;
+}
+.footer .footer-container .footer-col70 ul li a:hover {
+  text-decoration: underline;
+}
+.footer .flex {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+.footer .flex p {
+  color: #beb4c5;
+}
+.flex .icon {
+  margin-left: auto;
+  font-size: 2.2rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.center img {
+  object-fit: contain;
+  width: 10rem;
+  cursor: pointer;
+}
+/* -----media query--- */
+@media (max-width: 700px) {
+  html {
+    font-size: 52.5%;
+  }
+  .header .header-container {
+    width: 90%;
+    margin: auto;
+  }
+  .nav-link ul li {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    background: #f33446;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .click {
+    display: block;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .header .header-container .frequently {
+    width: 100%;
+  }
+  /* ----users-- */
+  .users-container {
+    width: 90%;
+    margin: auto;
+  }
+  .users-container .faq-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 3rem;
+  }
+
+  .users-container .faq-body .flex-col {
+    width: 100%;
+  }
+  /* ---find every--- */
+  .find-every .find-every-contain {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 9rem;
+  }
+  .find-every .find-every-contain h1 {
+    font-size: 4rem;
+  }
+  .find-every .find-every-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 7rem;
+  }
+  .find-every .find-every-container .find-every-container-col50 {
+    width: 100%;
+  }
+  .find-every .find-every-container .find-every-container-col50 p {
+    font-size: 1.8rem;
+    line-height: 1.9;
+    margin-top: 0.2rem;
+  }
+  .find-every .find-every-container .find-every-container-col40 {
+    width: 100%;
+    margin-top: 6.2rem;
+  }
+  .find-every .find-every-container .find-every-container-col40 img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* ---footer---- */
+  .footer .footer-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 0.7rem;
+    padding-bottom: 1rem;
+  }
+  .footer .footer-container .footer-col70 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    line-height: 1.8;
+  }
+  .footer .flex {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+}
